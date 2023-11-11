@@ -3,7 +3,10 @@ require 'rest-client'
 require 'json'
 
 # Replace these values with your actual credentials
-
+username = "riot"
+password = "VN8KpZGQdq5jWejcG7pGTA"
+port = "50599"
+match_id = 4823905286
 
 array_of_summoners = [
     "LeeXiuLong", 
