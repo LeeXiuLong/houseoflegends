@@ -2,9 +2,9 @@ require 'rubygems'
 require 'rest-client'
 require 'json'
 
-class LCUApiService
+class LcuApiService
 
-    def get_match_data(password, port, match_id)
+    def self.get_match_data(password, port, match_id)
 
         # Set up the LCU API URL for match history data
         match_history_url = "https://127.0.0.1:#{port}/lol-match-history/v1/games/#{match_id}"
@@ -16,8 +16,8 @@ class LCUApiService
         response = RestClient::Request.execute(
         method: :get,
         url: match_history_url,
-        user: username,
-        password: password,
+        user: auth[:username],
+        password: auth[:password],
         verify_ssl: false
         )
 
@@ -28,6 +28,6 @@ class LCUApiService
             puts "Failed to get match history data. Status code: #{response.code}"
             puts response.body
         end
-        
+
     end
 end
