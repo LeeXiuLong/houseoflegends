@@ -34,5 +34,4 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-/config/champion_data.json
 /config/sample_match_data.json
