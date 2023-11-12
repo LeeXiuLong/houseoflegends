@@ -30,4 +30,8 @@ class LcuApiService
         end
 
     end
+
+    def self.get_champion_data
+        url = 'https://ddragon.leagueoflegends.com/cdn/{version}/data/en_US/champion.json'
+    end
 end

@@ -5,7 +5,10 @@ class CreateSummoners < ActiveRecord::Migration[7.1]
       t.string :discord_name
       t.string :solo_rank
       t.string :flex_rank
+      t.integer :games_played
+      t.integer :wins
       
+      t.index :summoner_name, unique: true
       t.timestamps
     end
   end

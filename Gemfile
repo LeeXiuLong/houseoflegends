@@ -30,6 +30,10 @@ gem "rest-client"
 
 gem "ffi"
 
+gem "pry"
+
+gem "byebug"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
